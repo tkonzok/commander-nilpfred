@@ -26,3 +26,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/ANALYSIS.md
+/IMPLEMENTATION_PLAN.md
+original/FDS_RMX.zip
