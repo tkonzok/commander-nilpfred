@@ -1,0 +1,61 @@
+<header
+  class="min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-primary"
+>
+  <div class="w-full flex justify-center">
+    <img
+      src="/img/CommanderNilpfred_Logo_buntchaos.png"
+      class="w-[clamp(300px,100vw,2160px)] h-auto object-contain"
+      alt="Commander Nilpfred"
+    />
+  </div>
+  <nav class="mt-6">
+    <ul
+      class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-6 text-sm uppercase tracking-wider text-center"
+    >
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('musik')"
+        >
+          Musik
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('band')"
+        >
+          Commander wer?
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('termine')"
+        >
+          Termine
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('booking')"
+        >
+          Anfrage
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('kontakt')"
+        >
+          Kontakt
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-contact-cards',
   imports: [],
   templateUrl: './contact-cards.html',
-  styleUrl: './contact-cards.scss'
+  styleUrl: './contact-cards.scss',
 })
 export class ContactCards {}

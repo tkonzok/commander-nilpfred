@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-band-section',
   imports: [],
   templateUrl: './band-section.html',
-  styleUrl: './band-section.scss'
+  styleUrl: './band-section.scss',
 })
 export class BandSection {}

@@ -1,26 +1,57 @@
 <section id="termine" class="py-16 md:py-24 px-4 bg-gray-100">
   <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-8">
     <div class="w-full lg:w-1/2">
-      <img src="img/CommanderNilpfred_PrideHippos2025_Foto-ChristinAchterberg.png" alt="Commander Nilpfred live" class="w-full rounded shadow-lg" loading="lazy">
+      <img
+        src="img/CommanderNilpfred_PrideHippos2025_Foto-ChristinAchterberg.png"
+        alt="Commander Nilpfred live"
+        class="w-full rounded shadow-lg"
+        loading="lazy"
+      />
     </div>
     <div class="w-full lg:w-1/2">
       <h2 class="text-2xl text-gray-900 mb-6">Termine</h2>
       <div class="space-y-4 mb-8">
         @for (concert of upcomingConcerts; track concert.date + concert.venue) {
           <div class="border-l-4 border-primary pl-4 py-2">
-            <p class="text-sm text-gray-900 font-semibold" style="font-family: 'adumu', sans-serif; text-transform: uppercase;">{{ concert.date }} — {{ concert.venue }} @if (concert.city) { <span class="font-normal text-gray-600">({{ concert.city }})</span> }</p>
-            @if (concert.details) { <p class="text-gray-600 text-xs mt-1">{{ concert.details }}</p> }
-            @if (concert.ticketUrl) { <a [href]="concert.ticketUrl" target="_blank" rel="noopener" class="text-primary text-xs hover:underline inline-block mt-1">Tickets →</a> }
+            <p
+              class="text-sm text-gray-900 font-semibold"
+              style="font-family: 'adumu', sans-serif; text-transform: uppercase"
+            >
+              {{ concert.date }} — {{ concert.venue }}
+              @if (concert.city) {
+                <span class="font-normal text-gray-600">({{ concert.city }})</span>
+              }
+            </p>
+            @if (concert.details) {
+              <p class="text-gray-600 text-xs mt-1">{{ concert.details }}</p>
+            }
+            @if (concert.ticketUrl) {
+              <a
+                [href]="concert.ticketUrl"
+                target="_blank"
+                rel="noopener"
+                class="text-primary text-xs hover:underline inline-block mt-1"
+                >Tickets →</a
+              >
+            }
           </div>
         }
       </div>
-      <button (click)="showPast = !showPast" class="text-gray-500 text-xs uppercase tracking-wider mb-4 hover:text-gray-700 transition-colors">
+      <button
+        (click)="showPast = !showPast"
+        class="text-gray-500 text-xs uppercase tracking-wider mb-4 hover:text-gray-700 transition-colors"
+      >
         {{ showPast ? '▾ Vergangene ausblenden' : '▸ Vergangene anzeigen' }}
       </button>
       @if (showPast) {
         <div class="space-y-2 text-gray-400 text-xs">
           @for (concert of pastConcerts; track concert.date + concert.venue) {
-            <p>{{ concert.date }} — {{ concert.venue }} @if (concert.city) { ({{ concert.city }}) }</p>
+            <p>
+              {{ concert.date }} — {{ concert.venue }}
+              @if (concert.city) {
+                ({{ concert.city }})
+              }
+            </p>
           }
         </div>
       }

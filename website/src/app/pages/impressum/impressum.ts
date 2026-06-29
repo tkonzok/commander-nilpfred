@@ -1,21 +1,21 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ScrollService } from '../../shared/scroll';
 
 @Component({
   selector: 'app-impressum',
   imports: [],
   templateUrl: './impressum.html',
-  styleUrl: './impressum.scss'
+  styleUrl: './impressum.scss',
 })
 export class Impressum implements AfterViewInit {
-  constructor(private route: ActivatedRoute) {}
+  private readonly route = inject<ActivatedRoute>(ActivatedRoute);
+  private readonly scrollService = inject<ScrollService>(ScrollService);
 
   ngAfterViewInit(): void {
-    this.route.fragment.subscribe(fragment => {
+    this.route.fragment.subscribe((fragment) => {
       if (fragment) {
-        setTimeout(() => {
-          document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+        this.scrollService.scrollToElement(fragment);
       }
     });
   }

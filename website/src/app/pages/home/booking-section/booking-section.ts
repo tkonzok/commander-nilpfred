@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-booking-section',
   imports: [],
   templateUrl: './booking-section.html',
-  styleUrl: './booking-section.scss'
+  styleUrl: './booking-section.scss',
 })
 export class BookingSection {}

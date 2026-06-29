@@ -3,18 +3,21 @@ import { NgClass } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { ScrollService } from '../../shared/scroll';
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-header',
   imports: [NgClass, RouterLink],
-  templateUrl: './navbar.html',
-  styleUrl: './navbar.scss'
+  templateUrl: './header.html',
+  styleUrl: './header.scss',
 })
-export class Navbar {
+export class Header {
   isScrolled = false;
   menuOpen = false;
-  constructor(private router: Router, private scrollService: ScrollService) {}
+  constructor(
+    private router: Router,
+    private scrollService: ScrollService,
+  ) {}
   @HostListener('window:scroll')
   onScroll(): void {
-    this.isScrolled = window.scrollY > 50;
+    this.isScrolled = window.scrollY >= window.innerHeight * 0.85;
   }
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;

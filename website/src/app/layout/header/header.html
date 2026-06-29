@@ -1,0 +1,128 @@
+<nav
+  class="fixed top-0 left-0 right-0 z-50 px-4 py-3"
+  style="font-family: 'adumu', sans-serif; text-transform: uppercase"
+  [ngClass]="isScrolled ? 'navbar-solid' : 'navbar-transparent'"
+>
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a
+      routerLink="/"
+      class="text-white text-lg lg:text-xl tracking-wide cursor-pointer"
+      [ngClass]="isScrolled ? '' : 'hidden lg:block'"
+    >
+      COMMANDER NILPFRED
+    </a>
+    <button
+      class="text-white text-2xl p-2 ml-auto"
+      [ngClass]="isScrolled ? 'lg:hidden' : 'hidden'"
+      (click)="toggleMenu()"
+      aria-label="Menü öffnen"
+    >
+      <i class="fas" [ngClass]="menuOpen ? 'fa-times' : 'fa-bars'"></i>
+    </button>
+    <ul
+      class="space-x-6 text-sm uppercase tracking-wider"
+      [ngClass]="isScrolled ? 'hidden lg:flex' : 'hidden'"
+    >
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('musik')"
+        >
+          Musik
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('band')"
+        >
+          Commander wer?
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('termine')"
+        >
+          Termine
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('booking')"
+        >
+          Anfrage
+        </a>
+      </li>
+
+      <li>
+        <a
+          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+          (click)="navigateTo('kontakt')"
+        >
+          Kontakt
+        </a>
+      </li>
+    </ul>
+    <ul class="hidden lg:flex space-x-6 text-sm uppercase tracking-wider">
+      <li>
+        <a href="https://stereola.bandcamp.com/" target="_blank">
+          <i class="fa-brands fa-bandcamp text-white/60 hover:text-white text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/nilpfred" target="_blank">
+          <i class="fa-brands fa-facebook-square text-white/60 hover:text-white text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/commander_nilpfred/" target="_blank">
+          <i class="fa-brands fa-instagram-square text-white/60 hover:text-white text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=commander+nilpfred" target="_blank">
+          <i class="fa-brands fa-youtube-square text-white/60 hover:text-white text-2xl"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+@if (menuOpen) {
+  <div
+    class="fixed inset-0 z-40 bg-primary/95 flex flex-col items-center justify-center space-y-8 text-xl lg:hidden"
+    style="font-family: 'adumu', sans-serif; text-transform: uppercase"
+  >
+    <a class="text-black" (click)="navigateTo('musik')">Musik</a>
+    <a class="text-black" (click)="navigateTo('band')">Commander wer?</a>
+    <a class="text-black" (click)="navigateTo('termine')">Termine</a>
+    <a class="text-black" (click)="navigateTo('booking')">Anfrage</a>
+    <a class="text-black" (click)="navigateTo('kontakt')">Kontakt</a>
+    <ul class="flex flex-row space-x-6 text-sm uppercase">
+      <li>
+        <a href="https://stereola.bandcamp.com/" target="_blank">
+          <i class="fa-brands fa-bandcamp text-black text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/nilpfred" target="_blank">
+          <i class="fa-brands fa-facebook-square text-black text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/commander_nilpfred/" target="_blank">
+          <i class="fa-brands fa-instagram-square text-black text-2xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/results?search_query=commander+nilpfred" target="_blank">
+          <i class="fa-brands fa-youtube-square text-black text-2xl"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+}
