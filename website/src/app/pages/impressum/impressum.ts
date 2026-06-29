@@ -6,7 +6,6 @@ import { ScrollService } from '../../shared/scroll';
   selector: 'app-impressum',
   imports: [],
   templateUrl: './impressum.html',
-  styleUrl: './impressum.scss',
 })
 export class Impressum implements AfterViewInit {
   private readonly route = inject<ActivatedRoute>(ActivatedRoute);

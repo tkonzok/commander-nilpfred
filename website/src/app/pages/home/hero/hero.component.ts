@@ -5,7 +5,6 @@ import { ScrollService } from '../../../shared/scroll';
   selector: 'app-hero',
   imports: [],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss',
 })
 export class Hero {
   private readonly scrollService = inject(ScrollService);

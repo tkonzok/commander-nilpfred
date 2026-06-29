@@ -6,7 +6,7 @@
   <div class="max-w-6xl mx-auto flex items-center justify-between">
     <a
       routerLink="/"
-      class="text-white text-lg lg:text-xl tracking-wide cursor-pointer"
+      class="text-white text-lg lg:text-2xl tracking-wide cursor-pointer"
       [ngClass]="isScrolled ? '' : 'hidden lg:block'"
     >
       COMMANDER NILPFRED
@@ -20,7 +20,7 @@
       <i class="fas" [ngClass]="menuOpen ? 'fa-times' : 'fa-bars'"></i>
     </button>
     <ul
-      class="space-x-6 text-sm uppercase tracking-wider"
+      class="space-x-6 text-lg uppercase tracking-wider"
       [ngClass]="isScrolled ? 'hidden lg:flex' : 'hidden'"
     >
       <li>
@@ -68,7 +68,10 @@
         </a>
       </li>
     </ul>
-    <ul class="hidden lg:flex space-x-6 text-sm uppercase tracking-wider">
+    <ul
+      class="space-x-6 text-sm uppercase tracking-wider"
+      [ngClass]="isScrolled ? 'hidden lg:flex' : 'flex ml-auto'"
+    >
       <li>
         <a href="https://stereola.bandcamp.com/" target="_blank">
           <i class="fa-brands fa-bandcamp text-white/60 hover:text-white text-2xl"></i>

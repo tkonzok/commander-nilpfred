@@ -8,6 +8,5 @@ import { Header } from './layout/header/header';
   selector: 'app-root',
   imports: [RouterOutlet, Footer, ContactCards, Header],
   templateUrl: './app.html',
-  styleUrl: './app.scss',
 })
 export class App {}

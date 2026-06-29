@@ -6,7 +6,6 @@ import { ScrollService } from '../../shared/scroll';
   selector: 'app-header',
   imports: [NgClass, RouterLink],
   templateUrl: './header.html',
-  styleUrl: './header.scss',
 })
 export class Header {
   isScrolled = false;
