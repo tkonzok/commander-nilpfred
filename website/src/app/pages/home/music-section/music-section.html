@@ -3,9 +3,8 @@
   class="py-16 md:py-24 px-4 bg-gradient-to-b from-black via-black/90 to-black/80 scroll-mt-8"
 >
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-white text-2xl md:text-3xl mb-6">
-      Unser Erstgeborenes:<br />Tyrannopötamus Rex
-    </h2>
+    <h1 class="text-white text-2xl md:text-3xl mb-6">Musik</h1>
+    <h2 class="text-white text-xl mb-6">Unser Erstgeborenes:<br />Tyrannopötamus Rex</h2>
     <img
       src="img/music.png"
       alt="Tyrannopötamus Rex - Album auf Kassette"
@@ -22,14 +21,60 @@
       Anzuhören gibt es den T-Rex analog auf CD und MC. Oder digital als Fake-LP und auf den
       üblichen Kanälen. Z.B. hier:
     </p>
-    <iframe
-      [src]="odesliUrl"
-      width="100%"
-      height="52"
-      class="mb-6 rounded"
-      sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox"
-      allow="clipboard-read; clipboard-write"
-    ></iframe>
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 my-6 items-stretch">
+      <a
+        href="https://stereola.bandcamp.com/album/tyrannopotamus-rex-2"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img src="logos/bandcamp-logo-white.png" alt="Bandcamp Logo" class="w-28 m-auto" />
+      </a>
+      <a
+        href="https://www.youtube.com/results?search_query=commander+nilpfred"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img src="logos/youtube_white.png" alt="YouTube Logo" class="w-28 m-auto" />
+      </a>
+      <a
+        href="https://music.youtube.com/playlist?list=OLAK5uy_nM1GjWZvqVY-sTw_WaqIgDEleKdEeGKCc"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img
+          src="logos/youtube-music-seeklogo.com-white.svg"
+          alt="YouTube Music"
+          class="w-28 m-auto"
+        />
+      </a>
+      <a
+        href="https://music.apple.com/de/album/tyrannop%C3%B6tamus-rex/1587016663"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img src="logos/apple-music-white.svg" alt="Apple Music Logo" class="w-28 m-auto" />
+      </a>
+      <a
+        href="https://www.deezer.com/us/album/260660372"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img src="logos/deezer-seeklogo_white.svg" alt="Deezer Logo" class="w-28 m-auto" />
+      </a>
+      <a
+        href="https://open.spotify.com/album/1Ecu1ss9rh6ZbYVXcTqz6H"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-2 bg-gray-600 transition hover:opacity-50 rounded-md h-12 flex flex-col justify-center"
+      >
+        <img src="logos/spotify_logo_white.png" alt="Spotify Logo" class="w-28 m-auto" />
+      </a>
+    </div>
     <div class="text-white/60 text-sm space-y-3 mb-8 italic">
       <p>
         „...unterhaltsame, wirklich lustige, nicht zu alberne poppige Punkmusik mit genau der Menge
@@ -61,5 +106,13 @@
         >Platteninfo (PDF)</a
       >
     }
+  </div>
+
+  <div class="max-w-3xl mx-auto text-center mt-12">
+    <h2 class="text-white text-2xl md:text-3xl mb-6">Videos</h2>
+    <p class="text-white/60 my-4 text-sm md:text-base">Knapp (2023)</p>
+    <lite-youtube class="mx-auto mb-8" videoid="6hkTpw6_EW8"> </lite-youtube>
+    <p class="text-white/60 my-4 text-sm md:text-base">Heiter (2021)</p>
+    <lite-youtube class="mx-auto" videoid="w-UIuk2f3p8"> </lite-youtube>
   </div>
 </section>
