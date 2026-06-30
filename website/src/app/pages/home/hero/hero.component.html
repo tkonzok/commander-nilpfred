@@ -12,50 +12,16 @@
     <ul
       class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-6 text-xl uppercase tracking-wider text-center"
     >
-      <li>
-        <a
-          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
-          (click)="navigateTo('musik')"
-        >
-          Musik
-        </a>
-      </li>
-
-      <li>
-        <a
-          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
-          (click)="navigateTo('band')"
-        >
-          Commander wer?
-        </a>
-      </li>
-
-      <li>
-        <a
-          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
-          (click)="navigateTo('termine')"
-        >
-          Termine
-        </a>
-      </li>
-
-      <li>
-        <a
-          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
-          (click)="navigateTo('booking')"
-        >
-          Anfrage
-        </a>
-      </li>
-
-      <li>
-        <a
-          class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
-          (click)="navigateTo('kontakt')"
-        >
-          Kontakt
-        </a>
-      </li>
+      @for (section of sections; track $index) {
+        <li>
+          <a
+            class="text-white font-bold hover:text-white/60 transition-colors cursor-pointer"
+            (click)="navigateTo(section.fragment)"
+          >
+            {{ section.title }}
+          </a>
+        </li>
+      }
     </ul>
   </nav>
 </header>
