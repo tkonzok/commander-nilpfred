@@ -38,6 +38,12 @@
     "details": "mit The Venga Ois und Jimi Randale"
   },
   {
+    "date": "2025-11-21",
+    "venue": "Rider's Café",
+    "location": "Lübeck",
+    "details": "Plattbeats"
+  },
+  {
     "date": "2025-08-23",
     "venue": "Wurmloch Festival",
     "location": "Krumstedt",
@@ -54,5 +60,70 @@
     "venue": "Druckluft",
     "location": "Oberhausen",
     "details": "mit Im Taxi Rauchen und Rodi"
+  },
+  {
+    "date": "2023-08-19",
+    "venue": "Inihaus Sommerfest",
+    "location": "Bad Oldesloe",
+    "details": "mit Bliss Fear"
+  },
+  {
+    "date": "2023-05-27",
+    "venue": "Krawall am Komposthaufen",
+    "location": "Drage",
+    "details": "mit Jack Pott und Peters Beine"
+  },
+  {
+    "date": "2022-08-13",
+    "venue": "KuB auf dem Markt",
+    "location": "Bad Oldesloe",
+    "details": "mit Montreal und Jack Pott"
+  },
+  {
+    "date": "2022-08-06",
+    "venue": "Live am Teich",
+    "location": "Lübeck",
+    "details": "mit Keele und Space Melons"
+  },
+  {
+    "date": "2022-05-28",
+    "venue": "Krawall am Komposthaufen",
+    "location": "Drage",
+    "details": "mit Peters Beine und Poritz & Maul"
+  },
+  {
+    "date": "2022-04-29",
+    "venue": "KuB-Saal-Klub",
+    "location": "Bad Oldesloe",
+    "details": "mit Kazimir und Shabrack"
+  },
+  {
+    "date": "2021-09-24",
+    "venue": "KuB-Saal-Klub",
+    "location": "Bad Oldesloe",
+    "details": "mit Flying Fields"
+  },
+  {
+    "date": "2020-02-15",
+    "venue": "Bunte Zukunft",
+    "location": "Sülfeld"
+  },
+  {
+    "date": "2019-11-08",
+    "venue": "KuB-Saal-Klub",
+    "location": "Bad Oldesloe",
+    "details": "mit #ARRESTED"
+  },
+  {
+    "date": "2019-03-23",
+    "venue": "20 Jahre Inihaus",
+    "location": "Bad Oldesloe",
+    "details": "mit SURFITS und daSKArtell"
+  },
+  {
+    "date": "2018-03-24",
+    "venue": "Inihaus",
+    "location": "Bad Oldesloe",
+    "details": "mit Kazimir"
   }
 ]
